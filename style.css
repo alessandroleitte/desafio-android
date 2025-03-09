@@ -1,0 +1,185 @@
+@charset "utf-8";
+@font-face {
+    font-family: android;
+    src: url(fontes/idroid.otf) format(truetype);
+}
+@font-face {
+    font-family: coolvetica;
+    src: url(fontes/Coolvetica\ Rg\ Cond.otf);
+}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playwrite+IT+Moderna:wght@100..400&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rowdies:wght@300;400;700&display=swap');
+
+*{
+    margin: 0;
+}
+body{
+    background-color: #84e1ad;
+}
+header{
+    background-image: linear-gradient(#3bd580, #1a5c38);
+    color: white;
+    width: 100%;
+    max-height: 250px;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.141);
+}
+header > h1{
+    font-family: coolvetica, Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-size: 50px;    
+    text-align: center;
+    font-weight: 100;
+    padding: 2%;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.285);
+}
+header > p{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 18px;
+    max-width: 600px;
+    min-width: 250px;
+    margin: auto;
+}
+header > nav > a{
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    color: white;
+    margin: 0 2px;
+}
+header > nav{
+   padding: 3% 5px;
+}
+nav > a:hover{
+    background-color: #84e1ad;
+    color: #1a5c38;
+}
+main a{
+    text-decoration: none;
+    color: #4f8266;
+    font-family: "Rowdies", sans-serif;
+    font-weight: 900;
+}
+a:hover{
+    background-color: #1a5c38;
+    color:#c5ebd6;
+}
+
+.historia{
+    background-color: white;
+    margin: auto;
+    width: 75%;
+    padding: 1.5%;
+    box-shadow: 0px 0px 18px 1px rgba(0, 0, 0, 0.305);
+}
+.historia > h1, h2{
+    font-family: android, Arial, Helvetica, sans-serif;
+    color: #1c5e3a;
+}
+.historia > h1{
+    font-size: 35px;
+    margin: 3% 0;
+}
+.historia > h2{
+    font-size: 25px;
+    margin: 5% 0;
+    background-image: linear-gradient(to right, #c5ecd6, white);
+}
+.historia > p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 200;
+    text-align: justify;
+    text-indent: 3%;
+    padding: 10px 20px 50px 20px;
+}
+.imagem1{
+   /* margin: auto;*/
+    background-image: url(imagens/dan-droids.png);
+    width: 100%;
+    max-width: 1280px;
+    height: 400px;
+    background-size:contain;
+    background-repeat: no-repeat;
+}
+picture > img{
+    width: 100%;
+}
+
+.bugdroid{
+    display: block;
+    width: 50%;
+    margin: auto;
+}
+
+.video{
+    background-color: #1a5c38;
+    margin: auto;
+    width: 75%;
+    padding: 1.5%;
+}
+.video iframe{
+    margin: 2% 2%;
+}
+.extra{
+    background-color: white;
+    margin: auto;
+    width: 75%;
+    padding: 1.5%;
+}
+.extra h2, p{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.extra h2{
+    color: white;
+    background-color: #2fa866;
+    width: 100%;
+    height: 20px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding: 2% 0;
+}
+.aprender{
+    height: 90%;
+    width: 100%;
+    background-color: #c5ebd6;
+    text-indent: 3%;
+    border-radius: 10px;
+    padding-bottom: 2%;
+}
+.aprender-1{
+    padding: 1%;
+}
+.aprender-1 ul{
+    columns: 2;
+    margin: 20px auto;
+    width: 90%;
+    list-style-type: '\2714\00A0\00A0';
+}
+.ultimo-paragrafo{
+    padding: 2% 0;
+    text-indent: 3%;
+}
+footer{
+    width: 100%;
+    text-align: center;
+    color: white;
+    background-color: #1a5c38;
+    padding: 1% 0;
+}
+footer a{
+    text-decoration: none;
+    color: #2fa866;
+    font-family: "Rowdies", sans-serif;
+    font-weight: 900;
+}
+@media screen and (max-width: 600px){
+    .historia, .video, .extra{
+        width: 90%;
+    }
+}
+@media screen and (max-width: 1100px){
+    .imagem1{
+        background-image: url(imagens/dan-droids-pq.png);
+        width: 50%;
+        margin: auto;
+        
+    }
+}
